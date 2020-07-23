@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <h1>404 - Page Not Found</h1>
+    <span id="here">no redirect</span>
+    <script type="text/javascript">
+      // the new path to the default version & format of the docs
+      const newDocRoot = ['cylc-doc', 'current', 'html']
+
+      function compareArrays(a1, a2) {
+        if (a1.length != a2.length) {
+          return false;
+        }
+        return a1.every(function(val, ind) {
+          return val === a2[ind];
+        });
+      }
+
+      function getRedirect() {
+        const parts = window.location.pathname.split('/');
+        if (parts[-1] === 'documentation.html') {
+          // the old documentation landing page
+          return newDocRoot;
+        }
+        if (compareArrays(parts.slice(0, 3), ['', 'cylc.github.io', 'doc'])) {
+          // the old documentation root dir
+          return newDocRoot.concat(parts.slice(4));
+        }
+        return false;
+      }
+
+      const redirect = getRedirect();
+      document.getElementById('here').innerText = 'redirect to ' + redirect;
+    </script>
+  </body>
+</html>
