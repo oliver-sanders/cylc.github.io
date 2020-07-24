@@ -54,6 +54,30 @@ metascheduling in research and operational environments." %}
 Please [let us know](mailto:hilary.oliver@niwa.co.nz) if your organization
 should be included in the **[list of Cylc users](./users.html)**.
 
-Here's the DOI to use when citing Cylc: [![DOI](https://zenodo.org/badge/1836229.svg)](https://zenodo.org/badge/latestdoi/1836229)
 
-See also [publications and citations](./documentation.html#publications-and-citations)
+### Presentations
+
+Format HTML5 with embedded .webm videos (plays natively in Firefox or Chrome).
+Hit the "Home" and "End" keys to skip to the beginning and end of the
+presentation, and the 'o' key for a multi-slide summary. This is the
+[dzslides](https://github.com/paulrouget/dzslides) framework by Paul Roget.
+
+* [Cylc Keynote](cylc-keynote-lisbon-Sept2016/index.html) - from
+  the IS-ENES2 Workshop on Workflow in Earth Systems Modeling, Lisbon,
+  September 2016
+
+* [Cylc High Level Introduction](BoM-Feb-2017/index.html) - Bureau of
+  Meteorology, Melbourne, February 2017
+
+
+### Publications, Citations, and References
+
+Please cite Cylc in your publications if you used it to automate your
+workflows.
+
+* [![DOI](https://zenodo.org/badge/1836229.svg)](https://zenodo.org/badge/latestdoi/1836229) - Citable DOI for Cylc source code
+
+* [![DOI](http://joss.theoj.org/papers/10.21105/joss.00737/status.svg)](https://doi.org/10.21105/joss.00737) - A short paper in the Journal of Open Source Software.
+Cite as:
+> _Oliver et al., (2018). Cylc: A Workflow Engine for Cycling Systems. Journal of
+Open Source Software, 3(27), 737, [https://doi.org/10.21105/joss.00737](https://doi.org/10.21105/joss.00737)_
